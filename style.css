@@ -1,0 +1,134 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+}
+body{
+    background-color: #fffafa;
+}
+.header{
+    position: relative;
+    /* border: 1px solid blue; */
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+/* the logo */
+.header .heading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #808052;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    text-transform: capitalize;
+    font-weight: 100;
+    pointer-events: none;
+}
+.header .heading .head{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+/* the nav links */
+.header .nav-links{
+    /* border:1px solid red; */
+    text-transform: capitalize;
+    width: 100%;
+    margin-top:60px;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-links>div{
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    width: 40%;
+}
+.nav-links>div a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 600;
+}
+.nav-links>div .active a{
+    color: #808052;
+}
+/* from 600px of screenwidth downward- show burger and hide nav links */
+
+
+.page-title{
+    background-color: #808052;
+    padding: 30px;
+    font-family: 'Playfair Display', serif;
+    color:#fffafa;
+}
+
+/* sections */
+.standard{
+    padding:40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.standard .text{
+    text-align: left;
+}
+.standard .heading{
+    color: #808052;
+    font-family: 'Playfair Display', serif;
+}
+.standard .body{
+    margin: 10px 0;
+    font-size: 0.7rem;
+    font-family: 'Poppins', sans-serif;
+}
+.standard span{
+    display: block;
+    margin: 10px 0;
+    font-size: 0.7rem;
+    font-family: 'Poppins', sans-serif;
+}
+.standard span.price{
+    font-size: 0.9rem;
+    color: #808052;
+}
+.standard .links{
+    margin-top: 20px;
+}
+.standard a.book-now{
+    background-color: #808052;
+    color: #fffafa;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 30px ;
+    font-family: 'Poppins', sans-serif;
+}
+.standard a.more{
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    font-size: .7rem;
+    margin: 0 20px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+.standard a.more::after{
+    content: ">";
+    border-bottom: none;
+}
+.standard .photo img{
+    width: 100%;
+    height: 100%;
+}
