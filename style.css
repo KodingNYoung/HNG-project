@@ -357,6 +357,15 @@ footer .below{
         grid-column: 1/span 1;
     }
 
+    .section a.book-now{
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    .section a.more{
+        font-size: .6rem;
+        margin: 0 10px;
+    }
     /* arrange the footer items in rows */
     footer{
         padding: 30px;
@@ -383,5 +392,11 @@ footer .below{
         width: 50%;
         display: flex;
         justify-content: space-evenly;
+    }
+    .copyright{
+        font-size: 0.7rem;
+    }
+    .copyright .head{
+        font-size: 1.1rem;
     }
 }
